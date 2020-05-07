@@ -10,3 +10,5 @@ This is an basic Sitepackage for use in TYPO3 10 LTS (or newer).
 * Install it via composer:
   
   `composer require wwagner/sitepackage`  
+
+* Include the static template in your root TypoScript-Template
