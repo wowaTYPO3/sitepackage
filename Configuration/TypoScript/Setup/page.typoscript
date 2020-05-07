@@ -1,3 +1,48 @@
 page = PAGE
-page.10 = TEXT
-page.10.value = <h1>Hallo TYPO3 User!</h1>
+
+page.meta {
+  viewport = width=device-width,initial-scale=1
+}
+
+page.includeCSS {
+
+}
+
+page.includeJSLibs {
+
+}
+
+page.includeJSFooterlibs {
+
+}
+
+page.10 = FLUIDTEMPLATE
+page.10 {
+  partialRootPath = EXT:sitepackage/Resources/Private/Partials/
+  layoutRootPath = EXT:sitepackage/Resources/Private/Layouts/
+
+  file = EXT:sitepackage/Resources/Private/Templates/Default.html
+
+  /*
+  file.stdWrap.cObject = CASE
+  file.stdWrap.cObject {
+    key.data = pagelayout
+
+    pagets__default = TEXT
+    pagets__default.value = EXT:sitepackage/Resources/Private/Templates/Default.html
+
+    ## Hier können bei Bedarf weitere Backend Layouts abgefragt werden
+
+    default < .pagets__default
+  }
+  */
+
+  variables {
+    content0 < styles.content.get
+    content0.select.where = colPos = 0
+  }
+
+  settings {
+
+  }
+}
