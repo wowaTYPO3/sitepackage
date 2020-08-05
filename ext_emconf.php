@@ -5,7 +5,6 @@ $EM_CONF[$_EXTKEY] = [
     'category' => 'templates',
     'author' => 'Wolfgang Wagner',
     'author_email' => 'wwagner@wwagner.net',
-    'internal' => '',
     'uploadfolder' => '0',
     'createDirs' => '',
     'clearCacheOnLoad' => 1,
